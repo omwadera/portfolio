@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your main CSS file -->
+    <!-- Add your meta tags, stylesheets, and scripts here -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #080808;
+            color: #fff;
+        }
+
+        .work {
+            border-radius: 10px;
+            position: relative;
+            overflow: hidden;
+            margin: 20px;
+            max-width: 400px; /* Adjust the max-width to make images larger */
+        }
+
+        .work img {
+            border-radius: 10px;
+            display: block;
+            width: 100%;
+            transition: transform 0.5s;
+        }
+
+        .layer {
+            width: 100%;
+            height: 0;
+            border-radius: 10px;
+            background: linear-gradient(rgba(0, 0, 0, 0.6), #ff004f);
+            position: absolute;
+            overflow: hidden;
+            left: 0;
+            bottom: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0 20px;
+            text-align: center;
+            font-size: 14px;
+            transition: height 0.5s;
+        }
+
+        .layer h3 {
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+
+        .layer p {
+            margin-bottom: 15px;
+        }
+
+        .layer a {
+            font-size: 18px;
+            text-decoration: none;
+            margin-top: 10px;
+            line-height: 30px;
+            width: 30px;
+            height: 30px;
+            color: #ff004f;
+            background: #fff;
+            text-align: center;
+            border-radius: 50%;
+            transition: transform 0.5s;
+        }
+
+        .work:hover img {
+            transform: scale(1.1);
+        }
+
+        .work:hover .layer {
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="work">
+        <img src="images/Screenshot 2023-08-18 234335.png">
+        <div class="layer">
+            <h3>FarmEz Web App</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe perferendis ut sunt quod, repellendus fuga.</p>
+            <!-- <a href="http://ec2-16-171-249-165.eu-north-1.compute.amazonaws.com:8080"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> -->
+        </div>
+    </div>
+    <div class="work">
+        <img src="images/work-2.png">
+        <div class="layer">
+            <h3>Another Project</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe perferendis ut sunt quod, repellendus fuga.</p>
+            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+    </div>
+    <!-- Add more project details or content here -->
+    
+</body>
+</html>
